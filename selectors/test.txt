@@ -1,0 +1,5 @@
+three types of selectors:
+1.css element selector
+2.CSS id selector
+3.CSS class selector
+4.css grouping selector

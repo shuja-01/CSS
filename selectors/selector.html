@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector:</title>
+    <style>
+
+        /* grouping selector:::::: */
+        footer, span{
+            background-color: pink;
+        }
+        /* class selector::::
+        .classSelector{
+            color: blueviolet;
+        }    
+
+        .BgBlue{
+            background-color: yellow;
+        } */
+
+
+        /* id selector:::
+        #idSelector{
+            color: red;
+        } */
+
+        /* element selector:: this will be apply on all the p-tags  end comment
+        p{
+            color: red;
+        } */
+        p{
+            border: 2px dotted green;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS selector</h3>
+    <p id="idSelector" class="classSelector">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloribus</p>
+
+    <!-- adding two classes::: -->
+    <p class="classSelector BgBlue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quod?</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eveniet?</p>
+        <span>this is span</span>
+    </div>
+    <footer>this is footer</footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* syntax::
+    p{ color : blue;}
+    p-selectcor,
+    color- property,
+    blue- value*/
+
+/* syntax for selection of a tag using::: 
+id:: #id
+class:: ,class*/
+
+/* there are 3 ways to add css::
+1. inline css: in this we'll set css when we declare any tag for exp: <p style=""...>
+2. Internal CSS: in this we'll set css code in html file inside head section using <style></style> tag
+3. External CSS: in this we'll make style.css file and give reference of this file in html*/
+
+
+inline ki pripority sbse high hoti h...then internal and external ki same hi hoti h(inme se jo code(html) me latest likha hota h wo work krta h....internal or external me se ek high pripority dena chahte h then use: "!important", eg:
+p{
+    color: red !important
+}
+so if we write this then iska color always red hi set hoga)
