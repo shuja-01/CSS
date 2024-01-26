@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, borders and background</title>
+    <style>
+        #firstPara{
+            background-color: #ce6c6c;
+            height: 100px;/*it will increase the colored block's height */
+            width: 100px;/*it will decrease the colored block's width */
+
+            /* applying borders: */
+             /* border-width: 4px;
+            border-color: gray;
+            border-style: solid; */
+
+            /*applying these three line of code in a single line:: */
+            border: 4px solid green;
+            /* to make curvy border: we can use any parameter like px, % etc */
+            border-radius: 2%; 
+
+        }
+        /* here we will see how to apply border only one side of a paragraph tag: */
+        #secondPara{
+            background-color: aqua;
+            height: 100px;
+            width: 455px;
+            /* applying boders on four sides separately:: */
+
+            border-top: 5px solid purple;
+            border-bottom: 5px solid cornflowerblue;
+            border-left: 5px solid black;
+            border-right: 5px solid darkgreen;
+
+            /* changing radious separately:: */border-top-right-radius: 15px;
+            border-bottom-left-radius: 10px;  
+            /* and so on...  */
+        }
+
+        /* this wasn't in tutorial, i just added by myself:) */
+        .test{
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        /* addind background images: */
+        #thirdPara{
+            height: 400px;
+            width: 455px;
+            /* we can use both url or direct image from the directory:: */
+            background-image: url('https://avatars.githubusercontent.com/u/101463748?v=4');
+
+            border: 5px solid green;
+            border-radius: 5px;
+
+            /* setting of image position:: */
+            /* here, we are setting values as:: 
+            x-axis = center and 
+            y-axis = top*/
+            background-position: center top;
+            /* other exple::*/
+            /* background-position: 12px center; */
+            /* background-position: left 20%; */
+
+
+        }
+    </style>
+</head>
+<body>
+    <h3>Height, Width, borders and background</h3>
+    <p id="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illo?</p>
+    
+    <h3>Second Para:</h3>
+    <p id="secondPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero officiis fugiat cum maxime nisi id accusamus accusantium similique repudiandae?</p>
+    
+    <h3>Third Para:</h3>
+    <p id="thirdPara" class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, porro itaque placeat deserunt architecto fugit dolor provident ratione molestias culpa accusamus aspernatur.</p>
+</body>
+</html>

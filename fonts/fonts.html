@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
+
+    <style>
+        /* we can apply fonts using font-family */
+        p{
+            /* noramly using a font:: */
+            /* font-family: 'Courier New', Courier, monospace; */
+            
+            /*FONT STACKING:: more than one fonts degen priporitywise...if first wala font nhi hoga to second wala font apply ho jayega, if second wala nhi hoga to third wala and so on.. */
+            /* commawise seperated different fonts:: */
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        } */
+
+        font-family: 'Rubik Burned', system-ui;
+
+        /* font size:: */
+        font-size: 33px; /* 1 pixel = 1/96th of an inch*/
+        line-height: 1.3em; /*line-height is for spacing between fonts;;     em: it is a multiple of a parentsize*/
+    }
+
+    span{
+        font-weight: bold;
+        font-style: italic;
+    }
+    </style>
+</head>
+<body>
+    <h2>Fonts in CSS</h2>
+    <p>Lorem ipsum dolor sit amet <span>Lorem.</span> consectetur adipisicing elit. Dolorum, fuga.</p>
+</body>
+</html>
+
+<!-- there are 2 types of fonts::
+i. web-safe fonts:: fonts which are already available in the in system, no nee to import
+
+ii. web fonts: these are the fonts which are not intalled in the system..so we have to import these fonts before their uses-->
+
+<!-- to import fonts::
+i. go to 'google fonts'
+ii. choose needen font and copy its import part of style sheet::
+style sheet:: <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
+
+import part:: <style>
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+</style>
+
+and then write its font family name  like :"'Rubik Burned', system-ui;"" in desired element styling-->

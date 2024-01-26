@@ -1,0 +1,60 @@
+<!-- BOX MODEL(take reference from the image: boxModel.png):: content layer(inner layer) ==> padding layer ==> boder layer ==> margin layer -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .container{
+            background-color:antiquewhite;
+            border: 5px solid rgb(59, 94, 59);
+
+            /* going to apply padding, then content will shrink inside:: */
+            padding: 9px;
+
+            /* applying padding from the sides separately, from left, right, top or bottom::
+            padding-left: 10px;
+            padding-right: 2px; */
+            /* same as above, we can set margin from ecah side separately */
+
+            /* applying padding in a line with different parameters:: */
+            /* padding = top right bottom left */
+            /* padding: 23px 56px 45px 90px; */
+
+            /* if we want to set padding as top=bottom and left=right padding then */
+            /* padding: y(top/bottom) x(left/right). eg.,*/
+            /* padding: 34px 19 px; */
+
+            /* applying margin */
+            margin: 10px;
+
+            /* padding related one PROBLEM::: when we set width of a box and then try to increse padding and increase it more than width then width will also starts changing, this is happning because in actual width= content box width + padding box size....so to stop this problem:: we uses property "box zizing"*/
+            /* box-sizing: border-box; */
+           }
+
+           /* there is a universal selector(*) in css, so using that w'll set this box-sizing property */
+           *{
+            box-sizing: border-box;
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>First Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum expedita quos magni alias possimus rem id beatae assumenda. Labore?
+        </p>
+    </div>
+    <div class="container">
+        <h3>First Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum expedita quos magni alias possimus rem id beatae assumenda. Labore?
+        </p>
+    </div>
+    <div class="container">
+        <h3>First Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum expedita quos magni alias possimus rem id beatae assumenda. Labore?
+        </p>
+    </div>
+</body>
+</html>

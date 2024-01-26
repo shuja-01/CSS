@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Single Day', cursive;
+        }
+        .container{
+            background-color: #a398a3;
+            width: 600px;
+            border: 3px solid #800080;
+            /* to center the whole div(class=container) */
+            /* margin: auto; */
+
+            /* setting margin up-down separately:: */
+            margin: 40px auto; /*margin: x-axis y-axis) */
+        }
+        .item{
+            border: 3px solid #505050;
+            margin: 12px -2px;
+            padding: 12px 3px;
+            background: #ebc8c8;
+        }
+
+        #fruit{
+            /* float basicallly set the div in left side */
+            float: left;
+            width: 50%;
+            height: 165px;
+        }
+        #computer{
+            float: right;
+            width: 50%;
+        }
+        #stationary{
+            float: left;
+            width: 100%;
+
+            /* to stop overlapping problem there is a property ::  */
+            clear: both; /*to left and right together for left or right separately use "clear:left OR clear:right" */
+        }
+
+        #glasses{
+            clear: both;
+        }
+
+        /* alighinment of text :: */
+        p,h3{
+            /* text-align: right; */
+            /* text-align: center; */
+            /* text-align: left; */
+            text-align: justify;
+
+        }
+        h1{
+            margin: auto;
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>IT IS WHAT IT IS</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, eveniet!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computers</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, ipsum neque. Atque, veniam?</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur fuga quasi veritatis totam temporibus.</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur fuga quasi veritatis totam temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo totam reprehenderit incidunt?</p>
+        </div>
+
+    </div>
+</body>
+</html>
