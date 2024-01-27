@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more desiging</title>
+
+    <style>
+        .container{
+            border: 2px solid red;
+            padding: 34px;
+            margin: 34px auto;
+            width: 400px;
+        }
+
+        /* removing line from the link */
+        a{
+            text-decoration: none;
+            color: black;
+
+        }
+
+        /* these a:.... somethings are pseudo selectors */
+        /* when we hover to "a" tag the this will happens */
+        a:hover{
+            color: blue;
+            background-color: #c98888;
+            font-size: large;
+            border: 2px solid green;
+        }
+
+        .btn:hover{
+            font-size: large;
+            background-color: #c98888;
+            border: 2px solid green;
+        }
+        /* visited means if someone click this link even a single time, content of this tag will work */
+        a:visited{
+            color: black;
+        }
+
+        /* active means ehn we click this link then wo link jb tk open rahegi this work will takes place */
+        a:active{
+            background-color: aqua;
+        }
+        /* adding styling in btn class:: */
+        .btn{
+            background-color: red;
+            padding: 6px;
+            border: none;
+            /* adding cursor b/c when we hover to button it will convert into hand-sign */
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi dolore placeat repellat debitis saepe ratione repudiandae, reiciendis similique mollitia excepturi.</p>
+
+        <!-- adding link and buttons:: -->
+        <a href="https://www.google.com/" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    
+    </div>
+</body>
+</html>

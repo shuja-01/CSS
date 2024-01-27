@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <style>
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+        }
+        .navbar li{
+            /* setting these 'li' in a single line................IMPORTANT::: when we use float then that tag ''overflows'' from its parent tag, here this is the reason why background-color is not coming, so to solve this problem w'll set "overflow" property in navbar ul*/
+            float: left;
+
+            /* removing points(pointers) */
+            list-style: none;
+
+            /* adding margin */
+            margin: 13px 20px;
+        }
+
+        .navbar li a{
+             /* adding some gaps b/t these li's content */
+             padding: 1px 5px;
+
+             /* removing underline  from the link */
+             text-decoration: none;
+
+             color: white;
+        }
+
+        .navbar li a:hover{
+            color: gray;    
+            font-size: larger;
+            font-weight: bold;       
+        }
+
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        #search{
+            border-radius: 50px;
+        }
+
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 3px 17px;
+            width: 116px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+            
+        </nav>
+    </header>
+</body>
+</html>
